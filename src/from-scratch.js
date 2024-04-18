@@ -1,21 +1,34 @@
 const helloWorldRegex = (str) => {
-  return /Hello worldgit /gi.test(str)
+  return /Hello world/gi.test(str)
 };
-console.log(helloWorldRegex("Hello world")); // true
-console.log(helloWorldRegex("Hello world?")); // true
-console.log(helloWorldRegex("Hello world, are you there?")); // true
-console.log(helloWorldRegex("hello world")); // true
-console.log(helloWorldRegex("HELLO WORLD!")); // true
-console.log(helloWorldRegex("HeLlO wOrLd!")); // true
-console.log(helloWorldRegex("Sup world!")) // false
-console.log(helloWorldRegex("Where in the world is Carmen?")); // false
-console.log(helloWorldRegex("Hello")); // false
+// console.log(helloWorldRegex("Hello world")); // true
+// console.log(helloWorldRegex("Hello world?")); // true
+// console.log(helloWorldRegex("Hello world, are you there?")); // true
+// console.log(helloWorldRegex("hello world")); // true
+// console.log(helloWorldRegex("HELLO WORLD!")); // true
+// console.log(helloWorldRegex("HeLlO wOrLd!")); // true
+// console.log(helloWorldRegex("Sup world!")) // false
+// console.log(helloWorldRegex("Where in the world is Carmen?")); // false
+// console.log(helloWorldRegex("Hello")); // false
 
-const hasAVowel = (str) => { };
+const hasAVowel = (str) => {};
 
 const hasCatsOrDogs = (str) => { };
 
-const hasVowelStart = (str) => { };
+// Question 4
+const hasVowelStart = (str) => { 
+  return /[aeiou]/giy.test(str)
+};
+
+console.log(hasVowelStart("a")); // true
+console.log(hasVowelStart("A")); // true
+console.log(hasVowelStart("ab")); // true
+console.log(hasVowelStart("Ab")); // true
+console.log(hasVowelStart("ba")); // false
+console.log(hasVowelStart("Ba")); // false
+console.log(hasVowelStart("")); // false
+console.log(hasVowelStart('Hello'))
+
 
 const hasPunctuationEnd = (str) => { };
 
