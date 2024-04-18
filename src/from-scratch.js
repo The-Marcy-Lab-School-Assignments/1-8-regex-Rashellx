@@ -1,34 +1,46 @@
-const helloWorldRegex = (str) => {};
+const helloWorldRegex = (str) => {
+  return /Hello world/gi.test(str)
+};
+console.log(helloWorldRegex("Hello world")); // true
+console.log(helloWorldRegex("Hello world?")); // true
+console.log(helloWorldRegex("Hello world, are you there?")); // true
+console.log(helloWorldRegex("hello world")); // true
+console.log(helloWorldRegex("HELLO WORLD!")); // true
+console.log(helloWorldRegex("HeLlO wOrLd!")); // true
+console.log(helloWorldRegex("Sup world!")) // false
+console.log(helloWorldRegex("Where in the world is Carmen?")); // false
+console.log(helloWorldRegex("Hello")); // false
 
-const hasAVowel = (str) => {};
 
-const hasCatsOrDogs = (str) => {};
+const hasAVowel = (str) => { };
 
-const hasVowelStart = (str) => {};
+const hasCatsOrDogs = (str) => { };
 
-const hasPunctuationEnd = (str) => {};
+const hasVowelStart = (str) => { };
 
-const hasNothingOrDigits = (str) => {};
+const hasPunctuationEnd = (str) => { };
 
-const hasNoFlippers = (str) => {};
+const hasNothingOrDigits = (str) => { };
 
-const isValidEmail = (str) => {};
+const hasNoFlippers = (str) => { };
 
-const isValidPhoneNumber = (str) => {};
+const isValidEmail = (str) => { };
 
-const matchAllNumbers = (str) => {};
+const isValidPhoneNumber = (str) => { };
 
-const matchAllNumbersAsNumbers = (str) => {};
+const matchAllNumbers = (str) => { };
 
-const matchAllWords = (str) => {};
+const matchAllNumbersAsNumbers = (str) => { };
 
-const replaceAllNumbers = (str) => {};
+const matchAllWords = (str) => { };
 
-const fixFileName = (str) => {};
+const replaceAllNumbers = (str) => { };
 
-const nameRedacter = (str) => {};
+const fixFileName = (str) => { };
 
-const camelToSnakeCase = (str) => {};
+const nameRedacter = (str) => { };
+
+const camelToSnakeCase = (str) => { };
 
 module.exports = {
   helloWorldRegex,
