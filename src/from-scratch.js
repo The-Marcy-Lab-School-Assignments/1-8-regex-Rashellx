@@ -1,5 +1,5 @@
 const helloWorldRegex = (str) => {
-  return /Hello worldgit /gi.test(str)
+  return /Hello world/gi.test(str)
 };
 console.log(helloWorldRegex("Hello world")); // true
 console.log(helloWorldRegex("Hello world?")); // true
@@ -11,9 +11,21 @@ console.log(helloWorldRegex("Sup world!")) // false
 console.log(helloWorldRegex("Where in the world is Carmen?")); // false
 console.log(helloWorldRegex("Hello")); // false
 
-const hasAVowel = (str) => { };
+// Question 2 //
+const hasAVowel = (str) => {
+  return /[aeiou]/gi.test(str) // we have the function called hasAVowel
+};
 
-const hasCatsOrDogs = (str) => { };
+console.log(hasAVowel("a")); // true
+console.log(hasAVowel("AHHHHHH!")); // true
+console.log(hasAVowel("HEY")); // true
+console.log(hasAVowel("wow")); // true
+console.log(hasAVowel("")); // false
+console.log(hasAVowel("xzy")); // false
+console.log(hasAVowel("y")); // false
+
+// Question 3//
+const hasCatsOrDogs = (str) => {};
 
 const hasVowelStart = (str) => { };
 
